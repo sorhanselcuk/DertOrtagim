@@ -4,5 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\DertOrtagim.Entities\DertOrtagim.Entities.csproj" />
+  </ItemGroup>
+
 
 </Project>
