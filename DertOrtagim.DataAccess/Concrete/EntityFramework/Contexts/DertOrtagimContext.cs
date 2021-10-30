@@ -1,4 +1,5 @@
-﻿using DertOrtagim.Entities.DBModels;
+﻿using Core.Entities.SecurityModels;
+using DertOrtagim.Entities.DBModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace DertOrtagim.DataAccess.Concrete.EntityFramework.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=.;Database=DertOrtagimDB;Trusted_Connection=false;User Id=dertortagim;Password=dertortagim");
+            optionsBuilder.UseSqlServer(@"Server=.;Database=DERTORTAGIMDB;Trusted_Connection=false;User Id=dertortagim;Password=dertortagim123");
         }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Like> Likes { get; set; }
@@ -19,6 +20,7 @@ namespace DertOrtagim.DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<Post> Posts { get; set; }
         public DbSet<Profile> Profiles { get; set; }
         public DbSet<ProfilePicture> ProfilePictures { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }

@@ -16,13 +16,14 @@ namespace DertOrtagim.WebAPI.Controllers
         [HttpPost]
         public IActionResult GetCommentsByPostId(int postId)
         {
-            return BadRequest(result.Messge);
-            return Ok(IDataResult<List<CommentForReturnDto>>);
+            throw new NotImplementedException();
+
         }
 
         [HttpPost]
         public IActionResult Comment()
         {
+            throw new NotImplementedException();
 
         }
     }

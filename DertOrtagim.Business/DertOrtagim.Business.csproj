@@ -5,17 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Managers\" />
-    <Folder Include="Abstract\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Autofac" Version="6.3.0" />
     <PackageReference Include="Castle.Core" Version="4.4.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\DertOrtagim.DataAccess\DertOrtagim.DataAccess.csproj" />
+    <ProjectReference Include="..\DertOrtagim.Entities\DertOrtagim.Entities.csproj" />
   </ItemGroup>
 
 </Project>

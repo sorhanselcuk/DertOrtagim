@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DertOrtagim.Entities.DTOs
 {
-    public class LikeForReturnDto
+    public class UserRateForAddDto
     {
-        public int PostId { get; set; }
-        public List<int> UserIds { get; set; }
+        public int UserId { get; set; }
+        public int RatePoint { get; set; }
     }
 }

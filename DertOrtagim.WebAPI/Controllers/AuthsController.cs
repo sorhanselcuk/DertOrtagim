@@ -16,15 +16,15 @@ namespace DertOrtagim.WebAPI.Controllers
         [HttpPost]
         public IActionResult Login(string eMail,string password)
         {
-            return BadRequest(result.Message);
-            return Ok(IDataResult<string>);
+            throw new NotImplementedException();
+
         }
 
         [HttpPost]
         public IActionResult Register(UserForRegisterDto userForRegisterDto)
         {
-            return BadRequest(result.Message);
-            return Ok(IDataResult<string>);
+            throw new NotImplementedException();
+
         }
     }
 }

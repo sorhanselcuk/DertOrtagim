@@ -16,15 +16,15 @@ namespace DertOrtagim.WebAPI.Controllers
         [HttpPost]
         public IActionResult GetPosts()
         {
-            return BadRequest(result.Message);
-            return (IDataResult<List<PostForReturnDto>>);
+            throw new NotImplementedException();
+
         }
 
         [HttpPost]
         public IActionResult GetPostsByUserId(int userId)
         {
-            return BadRequest(result.Message);
-            return (IDataResult<List<PostForReturnDto>>);
+            throw new NotImplementedException();
+
         }
 
     }

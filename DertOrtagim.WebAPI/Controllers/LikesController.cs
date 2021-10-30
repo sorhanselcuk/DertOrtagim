@@ -15,21 +15,20 @@ namespace DertOrtagim.WebAPI.Controllers
         [HttpPost]
         public IActionResult GetLikesByPostId(int postId)
         {
-            return BadRequest(result.Message);
-            return (IDataResult<LikeForReturnDto>);
+            throw new NotImplementedException();
+
         }
 
         [HttpPost]
         public IActionResult Like(int postId)
         {
-            return BadRequest(result.Message);
-            return Ok(result.Message);
+            throw new NotImplementedException();
+
         }
         [HttpPost]
         public IActionResult UndoLike(int postId)
         {
-            return BadRequest(result.Message);
-            return Ok(result.Message);
+            throw new NotImplementedException();
         }
     }
 }
