@@ -33,7 +33,7 @@ namespace DertOrtagim.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
+            /*var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -52,7 +52,7 @@ namespace DertOrtagim.WebAPI
 
             services.AddDependencyResolvers(new ICoreModule[] {
                new CoreModule()
-            });
+            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

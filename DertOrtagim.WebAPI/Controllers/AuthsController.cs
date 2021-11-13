@@ -16,8 +16,7 @@ namespace DertOrtagim.WebAPI.Controllers
         [HttpPost]
         public IActionResult Login(string eMail,string password)
         {
-            throw new NotImplementedException();
-
+            return Ok("TEST");
         }
 
         [HttpPost]
@@ -25,6 +24,11 @@ namespace DertOrtagim.WebAPI.Controllers
         {
             throw new NotImplementedException();
 
+        }
+        [HttpGet]
+        public IActionResult Test()
+        {
+            return Ok("TEST");
         }
     }
 }

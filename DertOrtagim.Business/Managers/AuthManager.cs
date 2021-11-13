@@ -31,10 +31,10 @@ namespace DertOrtagim.Business.Managers
             {
                 EMail=userForRegisterDto.EMail,
                 UserName=userForRegisterDto.UserName,
-                FirstName=userForRegisterDto.FirstName,
-                LastName = userForRegisterDto.LastName,
-                DateOfBirth = userForRegisterDto.DateOfBirth,
-                Sex=userForRegisterDto.Sex,
+                //FirstName=userForRegisterDto.FirstName,
+                //LastName = userForRegisterDto.LastName,
+                //DateOfBirth = userForRegisterDto.DateOfBirth,
+                //Sex=userForRegisterDto.Sex,
                 PasswordHash=passwordHash,
                 PasswordSalt=passwordSalt
             };

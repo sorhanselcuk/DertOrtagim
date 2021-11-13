@@ -42,5 +42,10 @@ namespace DertOrtagim.Business.Managers
             var result = _userDal.Get(u => u.Id == userId);
             return result;
         }
+
+        public IDataResult<int> GetUserIdByUserName(string userName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

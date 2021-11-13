@@ -22,7 +22,7 @@ namespace DertOrtagim.Business.Managers
 
         public IDataResult<List<Message>> GetMessagesByFromUserId(int userId)
         {
-            var messages = _messageDal.GetAll(m=>m.FromUserId == userId).;
+            var messages = _messageDal.GetAll(m=>m.FromUserId == userId);
             return new SuccessDataResult<List<Message>>(messages,Messages.Success);
         }
 
